@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,700&family=Poppins:ital@1&family=Varela+Round&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: white; 
+}
+
+body {
+    background-color: hsl(259, 100%, 65%);
+}
+
+
+.container {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    margin: 85px auto;
+    border-radius: 50px 50px 300px 50px;
+    color: #888;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;  
+}
+
+
+input {
+    width: 125px;
+    height: 55px;
+    margin-top: 60px;
+    margin-left: 50px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    outline: none;
+    font-weight: bold;
+    border-color: hsl(259, 100%, 65%);
+    font-size: 1.25em;
+}
+
+button {
+    background-color: purple;
+    margin-top: 50px;
+    margin-left: 75%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    transition: 0.15s ease-out;
+}
+
+
+.results {
+    margin-top: -50px;
+    margin-left: 75px;
+    
+}
+
+.results h1 {
+    margin: -20px; 
+    font-size: 5em;
+    font-weight: 800;
+    color: black;
+}
+
+.results span {
+    color: hsl(259, 100%, 65%);
+}
+
+
+
+.container .error {
+    color: hsl(0, 100%, 67%);
+    flex-direction: column;
+    position: absolute;
+    margin-left: 50px;
+    padding-top: 5px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width:400px){
+    .container {
+        max-width: 300px;
+    }
+
+    .results {
+        font-size: 1.3rem;
+    }
+
+    input {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .form-group span .error {
+        font-size: 0.5rem;
+        margin-top: 0.2rem;
+        width: 100%;
+    }
+}
